@@ -1,0 +1,49 @@
+ion-title{
+    text-align: center;
+    font-family: Inter-Bold;
+    color: black;
+    font-size: 30px;
+}
+
+ion-content{
+    --ion-background-color: transparent;
+}
+
+img{
+    width: 170px;
+    height: 170px;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+h1{
+    font-family: Inter-Bold;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    font-family: Inter-SemiBold;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.msg{
+    margin-top: 30px;
+    width: 270px;
+    margin-left: 70px;
+}
+
+ion-button{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 30%;
+    font-family: Inter-Bold;
+    font-size: 24px;
+    color: white;
+    background-color: #CC00FF;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3); 
+}

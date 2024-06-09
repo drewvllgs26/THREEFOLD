@@ -1,0 +1,41 @@
+<ion-toolbar class="header-clr">
+    <ion-buttons slot="start" (click)="gotoHome()">
+      <img src="assets/images/arrow.png">
+    </ion-buttons>
+    <ion-title style="margin-left: 70px;">QUIZ TIME</ion-title>
+  </ion-toolbar>
+
+<ion-content class="topic-bg">
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">topic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="img_quiz">
+    <img src="assets/images/quiz.png">
+</div>
+
+
+<ion-content *ngIf="questions.length > 0">
+    <h1>{{quesNum}} out of 10</h1>
+<div class="quiz_content">
+  <div *ngIf="currentQuestionIndex < questions.length">
+    <div class="question_container">
+      <h2>{{ questions[currentQuestionIndex].question }}</h2>
+    </div>
+    <div class="choices">
+        <ion-button (click)="selectOption('optionA')">A. {{ questions[currentQuestionIndex].optionA }}</ion-button>
+        <ion-button (click)="selectOption('optionB')">B. {{ questions[currentQuestionIndex].optionB }}</ion-button>
+        <ion-button (click)="selectOption('optionC')">C. {{ questions[currentQuestionIndex].optionC }}</ion-button>
+        <ion-button (click)="selectOption('optionD')">D. {{ questions[currentQuestionIndex].optionD }}</ion-button>
+    </div> 
+  </div>
+</div>
+  <div *ngIf="currentQuestionIndex >= questions.length">
+      <h2>Quiz Completed</h2>
+      <p>Correct: {{ correct }}</p>
+      <p>Incorrect: {{ incorrect }}</p>
+      <p>Unanswered: {{ unanswered }}</p>
+  </div>
+</ion-content>

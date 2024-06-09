@@ -1,0 +1,107 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="header-clr">
+      <ion-title style="text-align: center;">MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="home-bg">
+    <ion-list lines="full">
+    <ion-item>
+    <div class="user_menu" *ngIf="user">
+    <img src="assets/images/profile-user.png">
+    <br>
+    <ion-label>{{user.username}}</ion-label>
+    </div>
+    </ion-item>
+    <div class="menu">
+    <ion-item>
+      <img src="assets/images/home-icon-silhouette.png">
+      <ion-label>HOME</ion-label>
+    </ion-item>
+    <ion-item (click)="editProfile()">
+      <img src="assets/images/user-avatar.png">
+      <ion-label style="margin-left: 25px;">EDIT PROFILE</ion-label>
+    </ion-item>
+    <ion-item>
+      <img src="assets/images/speech-bubbles.png">
+      <ion-label style="margin-left: 25px;">CONTACT US</ion-label>
+    </ion-item>
+    <ion-item>
+      <img src="assets/images/settings.png">
+      <ion-label style="margin-left: 40px;">SETTINGS</ion-label>
+    </ion-item>
+    <ion-item (click)="logout()">
+      <img src="assets/images/logout.png">
+      <ion-label style="margin-left: 45px;">LOGOUT</ion-label>
+    </ion-item>
+    </div>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar class="header-clr">
+      <ion-buttons slot="start">
+        <ion-menu-button style="color: black;"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="margin-left: 50px;">COMPU-THINK</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <video autoplay muted loop id="background-video">
+    <source src="assets/images/login_bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="user_info">
+    <div class="hi_img">
+    <img src="assets/images/speech-bubble.png">
+    </div>
+    <div class="user_name" *ngIf="user">
+      <h1>{{user.username}}</h1>
+      <div class="container"> 
+        <div class="progress"></div> 
+    </div> 
+    </div>
+  </div>
+  <div class="topic1">
+    <a [routerLink]="['/topic', 'introduction']">
+    <div class="topic_bg">
+        <img src="assets/images/3d-computer.png">
+    </div>
+  <div class="topic_bullet">
+    <h1>INTRODUCTION</h1>
+    <ul>
+      <li>What is a computer?</li>
+      <br>
+      <li>What are the different parts of a computer?</li>
+      <br>
+      <li>What is a program?</li>
+    </ul>
+  </div>
+  </a>
+  </div>
+  <div class="topic2">
+      <a [routerLink]="['/topic', 'chapter_1']">
+        <div class="topic_bg">
+          <img src="assets/images/3d-computer.png">
+        </div>
+        <div class="topic2_bullet">
+          <h1>CHAPTER 1</h1>
+          <ul>
+            <li>What are the different<br>types of computer?</li>
+            <br>
+            <li>Input Output Devices</li>
+            <br>
+            <li>What is an Operating System?</li>
+          </ul>
+        </div>
+      </a>
+  </div>
+  <!-- <div class="topic2">
+    <div class="locked">
+      <img src="assets/images/padlock.png">
+    </div>
+  </div> -->
+  <br>
+</ion-content>

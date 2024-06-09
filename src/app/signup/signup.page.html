@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div class="signup_content">
+    <br>
+    <h1>SIGNUP</h1>
+    <div class = "inputs">
+  <p>Email</p>
+  <ion-input class="custom" [(ngModel)]="email" [(ngModel)]="users.emailAdd"  type="text"></ion-input>
+  <p>Username</p>
+  <ion-input class="custom" [(ngModel)]="username" [(ngModel)]="users.username" type="text"></ion-input>
+  <p>Name</p>
+  <ion-input class="custom" [(ngModel)]="name" [(ngModel)]="users.name" type="text"></ion-input>
+  <p>Password</p>
+  <ion-input class="custom" [(ngModel)]="password" [(ngModel)]="users.password" type="password"></ion-input>
+  <p>Confirm Password</p>
+  <ion-input class="custom" [(ngModel)]="retypepw" type="password"></ion-input>
+  <br>
+    </div>
+  <p style="padding-left: 17%; font-family: Inter-Bold; color: white;">Already have an account? <a style="color: #9CCFEC; text-decoration: underline;"href="login">Log In</a></p>
+  <ion-button fill="clear" (click)="signingUp()">SIGNUP</ion-button>
+  </div>
+  </ion-content>
+  

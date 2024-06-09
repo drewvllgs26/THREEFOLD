@@ -1,0 +1,124 @@
+ion-title{
+    color: black;
+    font-size: 24px;
+    font-family: Inter-Bold;
+  }
+  
+  ion-item{
+    font-family: Inter-Bold;
+    font-size: 16px;
+  }
+  
+  .user_menu img {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .user_menu ion-label{
+    margin-top: 20px;
+    font-family: Inter-Bold;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .user_menu {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .menu ion-item img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  
+  .menu ion-label {
+    margin-top: 20px;
+    font-family: Inter-Bold;
+    font-size: 16px;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  a {
+    text-decoration: none;
+    color: white
+  }
+  
+  .user_info {
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+  
+  .img_container{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .hi_img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .user_name h1{
+    font-size: 24px;
+    font-family: Inter-Bold;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+  ion-button{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 30%;
+    font-family: Inter-Bold;
+    font-size: 24px;
+    color: white;
+    background-color: #CC00FF;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3); 
+}
+
+ion-input.custom {
+    background: #ffffff;
+    color: #000000;
+    width: 85%;
+    height: 5px;
+    margin: auto;
+    border: 1px solid #000000;
+    --padding-bottom: 10px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --padding-top: 10px;
+}
+
+.inputs p {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Inter-Light;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.inputs {
+    width: 95%;
+    margin: auto;
+}
+
+.inputs a{
+    color: white;
+    font-family: Inter-Regular;
+    text-decoration: none;
+    margin-left: 32%;
+}

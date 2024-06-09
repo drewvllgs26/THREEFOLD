@@ -1,0 +1,29 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+.md body {
+    --ion-background-color: linear-gradient(-45deg, #A333CA, #A7118F);
+}
+
+.ios body{
+    --ion-background-color: #A333CA;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("../assets/fonts/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Light";
+    src: url("../assets/fonts/Inter-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url("../assets/fonts/Inter-SemiBold.ttf");
+}

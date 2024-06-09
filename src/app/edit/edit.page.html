@@ -1,0 +1,67 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="header-clr">
+      <ion-title style="text-align: center;">MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="home-bg">
+    <ion-list lines="full">
+    <ion-item>
+    <div class="user_menu" *ngIf="user">
+    <img src="assets/images/profile-user.png">
+    <br>
+    <ion-label>{{user.username}}</ion-label>
+    </div>
+    </ion-item>
+    <div class="menu">
+    <ion-item (click)="gotoHome()">
+      <img src="assets/images/home-icon-silhouette.png">
+      <ion-label>HOME</ion-label>
+    </ion-item>
+    <ion-item>
+      <img src="assets/images/user-avatar.png">
+      <ion-label style="margin-left: 25px;">EDIT PROFILE</ion-label>
+    </ion-item>
+    <ion-item>
+      <img src="assets/images/speech-bubbles.png">
+      <ion-label style="margin-left: 25px;">CONTACT US</ion-label>
+    </ion-item>
+    <ion-item>
+      <img src="assets/images/settings.png">
+      <ion-label style="margin-left: 40px;">SETTINGS</ion-label>
+    </ion-item>
+    <ion-item (click)="logout()">
+      <img src="assets/images/logout.png">
+      <ion-label style="margin-left: 45px;">LOGOUT</ion-label>
+    </ion-item>
+    </div>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar class="header-clr">
+      <ion-buttons slot="start">
+        <ion-menu-button style="color: black;"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="margin-left: 50px;">EDIT PROFILE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="topic-bg">
+    <div class="img_container">
+      <img src="assets/images/profile-user.png">
+    </div>
+    <div class = "inputs">
+      <p>Email</p>
+      <ion-input class="custom" [(ngModel)]="users.emailAdd"  type="text"></ion-input>
+      <p>Username</p>
+      <ion-input class="custom" [(ngModel)]="users.username" type="text"></ion-input>
+      <p>Name</p>
+      <ion-input class="custom" [(ngModel)]="users.name" type="text"></ion-input>
+      <br>
+
+      <ion-button fill="clear" (click)="updateData()">UPDATE</ion-button>
+    </div>
+
+  </ion-content>

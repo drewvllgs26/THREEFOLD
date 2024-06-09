@@ -1,0 +1,91 @@
+<ion-toolbar class="header-clr">
+      <ion-buttons slot="start" (click)="gotoHome()">
+        <img src="assets/images/arrow.png">
+      </ion-buttons>
+      <ion-title style="margin-left: 45px;">INTRODUCTION</ion-title>
+    </ion-toolbar>
+
+<ion-content class="topic-bg">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">topic</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngIf="topic">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Computer</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ topic.info1 }}
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Parts of A Computer</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+            <ion-thumbnail slot="start">
+              <img alt="Monitor" src="https://static.vecteezy.com/system/resources/previews/009/887/131/original/computer-monitor-free-png.png" />
+            </ion-thumbnail>
+            <ion-label>Monitor</ion-label>
+            <ion-card-content>{{ topic.info2 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="Keyboard" src="https://static.vecteezy.com/system/resources/previews/009/269/550/original/3d-gaming-keyboard-object-png.png" />
+            </ion-thumbnail>
+            <ion-label>Keyboard</ion-label>
+            <ion-card-content>{{ topic.info3 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="Mouse" src="https://static.vecteezy.com/system/resources/previews/009/308/159/original/mouse-computer-on-transparent-background-file-png.png" />
+            </ion-thumbnail>
+            <ion-label>Mouse</ion-label>
+            <ion-card-content>{{ topic.info4 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="CPU" src="https://pngimg.com/uploads/cpu/cpu_PNG40.png" />
+            </ion-thumbnail>
+            <ion-label>CPU (Central Processing Unit)</ion-label>
+            <ion-card-content>{{ topic.info5 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="RAM" src="https://i.pinimg.com/originals/d9/26/92/d926929a407749d1e1a259193bc74885.png" />
+            </ion-thumbnail>
+            <ion-label>RAM (Random Access Memory)</ion-label>
+            <ion-card-content>{{ topic.info6 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="ROM" src="https://decodethejargonkaran.weebly.com/uploads/5/5/9/1/55917979/610904.png?340" />
+            </ion-thumbnail>
+            <ion-label>ROM (Read-Only Memory)</ion-label>
+            <ion-card-content>{{ topic.info7 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="hd" src="https://purepng.com/public/uploads/large/purepng.com-hdd-hard-disk-driveelectronics-hard-disk-hard-drive-941524662478iqnno.png" />
+            </ion-thumbnail>
+            <ion-label>Hard Drive</ion-label>
+            <ion-card-content>{{ topic.info9 }}</ion-card-content>
+            <br>
+            <ion-thumbnail slot="start">
+              <img alt="Cooling Fan" src="https://static.vecteezy.com/system/resources/previews/018/869/557/original/technology-cooling-fan-illustration-3d-png.png" />
+            </ion-thumbnail>
+            <ion-label>Cooling Fan</ion-label>
+            <ion-card-content>{{ topic.info10 }}</ion-card-content>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Program</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ topic.info11 }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-button (click)="gotoQuiz()">ANSWER THE QUIZ</ion-button>
+</ion-content>
+
